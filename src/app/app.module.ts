@@ -27,7 +27,8 @@ import { ClientService } from './services/client.service';
 const appRoutes: Routes = [
     {path: '' , component: DashboardComponent},
     {path: 'register', component: RegisterComponent},
-    {path: 'login', component: LoginComponent}
+    {path: 'login', component: LoginComponent},
+    {path: 'add-client', component: AddClientComponent}
 ]
 
 

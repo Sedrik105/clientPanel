@@ -1,3 +1,11 @@
-<p>
-  add-client works!
-</p>
+<div class="row">
+  <div>
+    <label>Meno:</label>
+    <input type="text"
+      [( ngModel )]="client.firstName"
+           name="firstName"
+           #clientFirstName ="ngModel"
+
+    >
+  </div>
+</div>
