@@ -19,4 +19,12 @@ export class ClientService {
 
     return this.clients;
   }
+  newClient(client: Client) {
+    this.clientsRef.push(client);
+  }
+  getClient(id: string){
+    this.client = this.afd.object('/clients' + id ).valueChanges();
+    return this.client;
+
+  }
 }
